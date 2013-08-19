@@ -6,10 +6,10 @@
         id        = "com.phonegap.hello-world22"
         version   = "1.0.0">
 
-    <name>Ussad</name>
+    <name>shaketocap</name>
 
     <description>
-        Hello World sample application that responds to the deviceready event.
+        miniproject select topic
     </description>
 
     <author href="http://phonegap.com" email="support@phonegap.com">
