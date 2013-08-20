@@ -1,9 +1,24 @@
 <!DOCTYPE html>
 <html>
   <head>
+  <center><h1>Left Or (a)Right</h1></center>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <title>Acceleration Example</title>
-   
+  <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <title>Acceleration</title>
+    <style type="text/css">
+	  body{
+  		background-color:#000;
+  		color:#e1e1e1;
+  		font-size:14px;
+		
+  		}
+		
+		h1{
+  		background-color:#000;
+  		color:#fff;
+  		font-size:30px;
+  		}
+	</style>
     <script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
     <script type="text/javascript" charset="utf-8">
 
@@ -53,7 +68,7 @@
 		
 		if(newX>0){//rotate left
 			
-			alert(playBeep(),'Left');
+			alert('Left',playBeep());
 			//move ball left
 		}
 		else if(newX<0){//rotate right
@@ -68,10 +83,11 @@
 
     </script>
   </head>
-  	
+  	<center>
   <body >
-    <div id="accelerometer">Waiting for accelerometer...</div>
-        <button onclick="stopWatch();">Stop Watching</button>
+    <br><div id="accelerometer">Waiting for accelerometer...</div><br>
+        <button onclick="stopWatch();" class="btn btn-danger">Stop Watching</button>
         
   </body>
+  </center>
 </html>
