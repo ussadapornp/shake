@@ -52,7 +52,7 @@
 		
 		if(newX>0){//rotate left
 			alert('Left');
-			//move ball left
+			playBeep()//move ball left
 		}
 		else if(newX<0){//rotate right
 			alert('Right');//move ball right
@@ -69,6 +69,6 @@
   <body>
     <div id="accelerometer">Waiting for accelerometer...</div>
         <button onclick="stopWatch();">Stop Watching</button>
-        <p><a href="#" onclick="playBeep(); return false;">Play Beep</a></p>
+        
   </body>
 </html>
