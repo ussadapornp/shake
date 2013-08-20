@@ -66,12 +66,12 @@
 		
 		var newY = acceleration.y;
 		
-		if(newY>0){//rotate left
+		if(newY<5){//rotate left
 			
 			alert('Wake Up...!!!!',playBeep());
 			//move ball left
 		}
-		else if(newY<0){
+		else if(newY>5){
 			//move ball right
 		}
     }
