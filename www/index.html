@@ -48,6 +48,16 @@
                             'Acceleration Z: ' + acceleration.z + '<br />' +
                             'Timestamp: '      + acceleration.timestamp + '<br />';
     }
+    
+    function compair(acceleration) {
+        if (acceleration.x<0) {
+             alert('Left');
+        }
+        else{
+            alert('Right');
+        }
+        
+    }
 
     // onError: Failed to get the acceleration
     //
