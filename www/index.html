@@ -44,7 +44,8 @@
     }
     
     
-   function onSuccess(acceleration) {
+   function onSuccess(acceleration) { 
+   		navigator.notification.vibrate(500);
 		var element = document.getElementById('accelerometer');
 		element.innerHTML = 'Acceleration X: ' + acceleration.x;
 		
@@ -52,7 +53,7 @@
 		
 		if(newX>0){//rotate left
 			alert('Left');
-			vibrate();//move ball left
+			//move ball left
 		}
 		else if(newX<0){//rotate right
 			alert('Right');//move ball right
