@@ -39,13 +39,11 @@
     }
 
     
-    function vibrate() {
-        navigator.notification.vibrate(500);
-    }
+   
     
     
    function onSuccess(acceleration) { 
-   		navigator.notification.vibrate(500);
+   		
 		var element = document.getElementById('accelerometer');
 		element.innerHTML = 'Acceleration X: ' + acceleration.x;
 		
