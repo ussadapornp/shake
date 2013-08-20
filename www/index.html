@@ -48,6 +48,12 @@
        //                     'Acceleration Z: ' + acceleration.z + '<br />' +
       //                      'Timestamp: '      + acceleration.timestamp + '<br />';
   //  }
+    function vibrateL() {
+        navigator.notification.vibrate(200);
+    }
+    function vibrateR() {
+        navigator.notification.vibrate(1000);
+    }
     
    function onSuccess(acceleration) {
 		var element = document.getElementById('accelerometer');
@@ -56,10 +62,12 @@
 		var newX = acceleration.x;
 		
 		if(newX>0){//rotate left
-			alert('Left');//move ball left
+			alert('Left')
+			vaibrateL();//move ball left
 		}
 		else if(newX<0){//rotate right
-			alert('Right');//move ball right
+			alert('Right')
+			vibrateR();//move ball right
 		}
     }
     // onError: Failed to get the acceleration
