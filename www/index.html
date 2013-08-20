@@ -40,25 +40,28 @@
 
     // onSuccess: Get a snapshot of the current acceleration
     //
-    function onSuccess(acceleration) {
-        var element = document.getElementById('accelerometer');
+    //function onSuccess(acceleration) {
+      //  var element = document.getElementById('accelerometer');
 
-        element.innerHTML = 'Acceleration X: ' + acceleration.x + '<br />' +
-                            'Acceleration Y: ' + acceleration.y + '<br />' +
-                            'Acceleration Z: ' + acceleration.z + '<br />' +
-                            'Timestamp: '      + acceleration.timestamp + '<br />';
-    }
+      //  element.innerHTML = 'Acceleration X: ' + acceleration.x + '<br />' +
+      //                      'Acceleration Y: ' + acceleration.y + '<br />' +
+       //                     'Acceleration Z: ' + acceleration.z + '<br />' +
+      //                      'Timestamp: '      + acceleration.timestamp + '<br />';
+  //  }
     
-    function compair(acceleration) {
-        if (acceleration.x<0) {
-             alert('Left');
-        }
-        else{
-            alert('Right');
-        }
-        
+   function onSuccess(acceleration) {
+		var element = document.getElementById('accelerometer');
+		element.innerHTML = 'Acceleration X: ' + acceleration.x;
+		
+		var newX = acceleration.x;
+		
+		if(newX>0){//rotate left
+			alert'Right';//move ball left
+		}
+		else if(newX<0){//rotate right
+			alert'Left';//move ball right
+		}
     }
-
     // onError: Failed to get the acceleration
     //
     function onError() {
