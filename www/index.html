@@ -38,9 +38,10 @@
         }
     }
 
-    
-   
-    
+     function playBeep() {
+        navigator.notification.beep(2);
+    }
+
     
    function onSuccess(acceleration) { 
    		
@@ -51,7 +52,7 @@
 		
 		if(newX>0){//rotate left
 			alert('Left');
-			//move ball left
+			playBeep();//move ball left
 		}
 		else if(newX<0){//rotate right
 			alert('Right');//move ball right
