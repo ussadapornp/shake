@@ -39,7 +39,7 @@
     }
 
      function playBeep() {
-        navigator.notification.beep(2);
+        navigator.notification.beep(1);
     }
 
     
@@ -51,8 +51,9 @@
 		var newX = acceleration.x;
 		
 		if(newX>0){//rotate left
+			playBeep();
 			alert('Left');
-			playBeep()//move ball left
+			//move ball left
 		}
 		else if(newX<0){//rotate right
 			alert('Right');//move ball right
