@@ -39,12 +39,10 @@
     }
 
     
-    function vibrateL() {
-        navigator.notification.vibrate(200);
+    function vibrate() {
+        navigator.notification.vibrate(500);
     }
-    function vibrateR() {
-        navigator.notification.vibrate(1000);
-    }
+    
     
    function onSuccess(acceleration) {
 		var element = document.getElementById('accelerometer');
@@ -54,11 +52,10 @@
 		
 		if(newX>0){//rotate left
 			alert('Left');
-			vaibrateL();//move ball left
+			vibrate();//move ball left
 		}
 		else if(newX<0){//rotate right
-			alert('Right');
-			vibrateR();//move ball right
+			alert('Right');//move ball right
 		}
     }
     // onError: Failed to get the acceleration
