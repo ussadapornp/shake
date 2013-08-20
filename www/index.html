@@ -38,16 +38,7 @@
         }
     }
 
-    // onSuccess: Get a snapshot of the current acceleration
-    //
-    //function onSuccess(acceleration) {
-      //  var element = document.getElementById('accelerometer');
-
-      //  element.innerHTML = 'Acceleration X: ' + acceleration.x + '<br />' +
-      //                      'Acceleration Y: ' + acceleration.y + '<br />' +
-       //                     'Acceleration Z: ' + acceleration.z + '<br />' +
-      //                      'Timestamp: '      + acceleration.timestamp + '<br />';
-  //  }
+    
     function vibrateL() {
         navigator.notification.vibrate(200);
     }
@@ -62,11 +53,11 @@
 		var newX = acceleration.x;
 		
 		if(newX>0){//rotate left
-			alert('Left')
+			alert('Left');
 			vaibrateL();//move ball left
 		}
 		else if(newX<0){//rotate right
-			alert('Right')
+			alert('Right');
 			vibrateR();//move ball right
 		}
     }
