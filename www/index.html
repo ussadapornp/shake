@@ -55,7 +55,7 @@
     }
 
      function playBeep() {
-        navigator.notification.beep(1);
+        navigator.notification.beep(3);
     }
 
     
@@ -67,8 +67,8 @@
 		var newY = acceleration.y;
 		
 		if(newY<5){//rotate left
-			
-			alert('Wake Up...!!!!',playBeep());
+			playBeep();
+			alert('Wake Up...!!!!');
 			//move ball left
 		}
 		else if(newY>5){
